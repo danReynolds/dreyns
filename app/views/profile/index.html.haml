@@ -1,3 +1,11 @@
-.row-fluid
-  .hero-unit
-    %h1 welcome
+.profile  
+  .et-wrapper
+    - @transitions.each_with_index do |page, i|
+      .et-page(id="page-#{i}")
+        .container
+          .row.text
+            Dan Reynolds
+          .row.buttons
+            %button.et-rotate{"et-in" => "#{@transitions[i].first}", "et-out" => "#{@transitions[i].last}", value: 0} 1
+            %button.et-rotate{"et-in" => "#{@transitions[i].first}", "et-out" => "#{@transitions[i].last}", value: 1} 2
+            %button.et-rotate{"et-in" => "#{@transitions[i].first}", "et-out" => "#{@transitions[i].last}", value: 2} 3

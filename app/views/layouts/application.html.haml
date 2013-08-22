@@ -9,7 +9,4 @@
     = yield :head
   %body
     %main{:role => "main"}
-      .container
-        .row-fluid
-          = render partial: 'layouts/navigation'
-          = yield
+      = yield

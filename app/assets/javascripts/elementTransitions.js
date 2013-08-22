@@ -7,6 +7,7 @@ var PageTransitions = (function() {
 /*
   elementTransitions.js
 */
+  var index = 1;
   var startElement = 0,
   animEndEventNames = {
     'WebkitAnimation': 'webkitAnimationEnd',
@@ -45,6 +46,7 @@ var PageTransitions = (function() {
     });
 
     $(".et-rotate").click(function() {
+      index = $(this).val();
       animate($(this));
     });
   }
@@ -70,12 +72,8 @@ var PageTransitions = (function() {
     block.data('isAnimating', true);
 
     var $currPage = $pages.eq(current);
-    if(current < pagesCount - 1) {
-      current++;
-    }
-    else {
-      current = 0;
-    }
+    current = index;
+
     block.data('current', current);
 
     var $nextPage = $pages.eq(current).addClass('et-page-current');

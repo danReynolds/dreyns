@@ -16,9 +16,12 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 gem 'haml-rails', '0.4'
-gem 'bootstrap-sass'
+
 gem 'simple_form'
 gem 'font-awesome-sass-rails', '~> 3.0.0.1'
+gem 'therubyracer'  # If using Ruby
+gem 'jquery-rails'  # If using Bootstrap's JS plugins.
+gem 'less-rails-bootstrap', '~> 3.0.0.wip', github: 'sinfin/less-rails-bootstrap-3'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -37,6 +40,11 @@ gem "social-buttons", git: "git://github.com/kristianmandrup/social-buttons.git"
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
 end
 
 # Use ActiveModel has_secure_password
