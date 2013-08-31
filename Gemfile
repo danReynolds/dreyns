@@ -20,6 +20,7 @@ gem 'haml-rails', '0.4'
 gem 'simple_form'
 gem 'font-awesome-sass-rails', '~> 3.0.0.1'
 gem 'therubyracer'  # If using Ruby
+gem 'bootstrap-sass'
 gem 'jquery-rails'  # If using Bootstrap's JS plugins.
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
