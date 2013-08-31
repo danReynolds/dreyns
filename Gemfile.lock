@@ -5,13 +5,6 @@ GIT
     social-buttons (0.3.8)
       rails (>= 3.0.0)
 
-GIT
-  remote: git://github.com/sinfin/less-rails-bootstrap-3.git
-  revision: dd8521ee374fb31b083dfbb312d53f7c79322319
-  specs:
-    less-rails-bootstrap (3.0.0.wip)
-      less-rails (~> 2.3.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -55,7 +48,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
-    commonjs (0.2.6)
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.0.1)
@@ -81,11 +73,6 @@ GEM
       railties (>= 3.1.0)
       turbolinks
     json (1.8.0)
-    less (2.3.3)
-      commonjs (~> 0.2.6)
-    less-rails (2.3.3)
-      actionpack (>= 3.1)
-      less (~> 2.3.1)
     libv8 (3.16.14.3)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -162,7 +149,6 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   jquery-turbolinks
-  less-rails-bootstrap (~> 3.0.0.wip)!
   pg
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
