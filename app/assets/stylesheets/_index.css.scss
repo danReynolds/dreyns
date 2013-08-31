@@ -9,6 +9,9 @@
         width: 300px;
         margin-left: 40px;
         margin-bottom: 20px;
+        a {
+          text-decoration: none;
+        }
       }
       .buttons {
         text-align: center;
@@ -23,14 +26,18 @@
         li {
           list-style-type: none;
         }
+        .true {
+          color: rgb(105, 102, 102);
+        }
       }
     }
   }
   #page-3 {
    background: #76A3A6; 
+  background: #F5B351;
    }
   #page-1 { 
-    background: #F5B351;
+   background: #76A3A6; 
   }
   #page-2 {
     background: #A1C2AE;

@@ -8,28 +8,36 @@
           .row-fluid.buttons
             .span4
               .et-rotate{"et-in" => "#{@transitions[0].first}", "et-out" => "#{@transitions[0].last}", value: 1}
-                = link_to "Work", root_url
+                = link_to "Work", root_url, class: 'local'
             .span4.et-rotate{"et-in" => "#{@transitions[0].first}", "et-out" => "#{@transitions[0].last}", value: 2}
-              = link_to "Projects", root_url
+              = link_to "Projects", root_url, class: 'local'
             .span4.et-rotate{"et-in" => "#{@transitions[0].first}", "et-out" => "#{@transitions[0].last}", value: 3}
-              = link_to "Fun", root_url
+              = link_to "Fun", root_url, class: 'local'
+      = render 'layouts/footer'
+
 
     - @transitions.first(3).each_with_index do |page, i|
       .et-page(id="page-#{i+1}")
         .container-fluid.content
-          %nav.cl-effect-1
-            .side-bar
-              %ul
-                %li.text
-                  Dan Reynolds
-                %li
-                  .et-rotate{"et-in" => "#{@transitions[i+1].first}", "et-out" => "#{@transitions[i+1].last}", value: 1}
-                    = link_to "Work", root_url
-                %li
-                  .et-rotate{"et-in" => "#{@transitions[i+1].first}", "et-out" => "#{@transitions[i+1].last}", value: 2}
-                    = link_to "Projects", root_url
-                %li
-                  .et-rotate{"et-in" => "#{@transitions[i+1].first}", "et-out" => "#{@transitions[i+1].last}", value: 3}
-                    = link_to "Fun", root_url
+          .row-fluid
+            .span3
+              .side-bar
+                %ul
+                  %li.text.et-rotate{"et-in" => "#{@transitions[1].first}", "et-out" => "#{@transitions[1].last}", value: 0}
+                    =link_to 'Dan Reynolds', root_url, class: 'local'
+                  %nav.cl-effect-1
+                    %li
+                      .et-rotate{"et-in" => "#{@transitions[i+1].first}", "et-out" => "#{@transitions[i+1].last}", value: 1}
+                        = link_to "Work", root_url, class: "local #{(i+1)==1}"
+                    %li
+                      .et-rotate{"et-in" => "#{@transitions[i+1].first}", "et-out" => "#{@transitions[i+1].last}", value: 2}
+                        = link_to "Projects", root_url, class: "local #{(i+1)==2}"
+                    %li
+                      .et-rotate{"et-in" => "#{@transitions[i+1].first}", "et-out" => "#{@transitions[i+1].last}", value: 3}
+                        = link_to "Fun", root_url, class: "local #{(i+1)==3}"
+            .span9
+              = render partial: "profile/pages/#{@pages[i]}"
+          = render 'layouts/footer'
+
 
 

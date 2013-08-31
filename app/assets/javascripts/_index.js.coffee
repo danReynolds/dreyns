@@ -1,3 +1,3 @@
 $ ->
-  $('a').click (e) ->
+  $('.local').click (e) ->
     e.preventDefault()

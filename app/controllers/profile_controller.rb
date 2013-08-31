@@ -1,5 +1,6 @@
 class ProfileController < ApplicationController
   def index
-    @transitions = [["moveFromLeftFade","moveToRightFade"], ["moveFromBottomFade","moveToTopFade"], ["moveFromBottomFade", "moveToTopFade"], ["moveFromBottomFade", "moveToTopFade"]]
+    @transitions = [["moveFromLeft","moveToRight"], ["moveFromTop","moveToBottom"], ["moveFromRight ontop", "moveToLeft"], ["moveFromBottom", "moveToTopEasing ontop"]]
+    @pages = ['work','projects','fun']
   end
 end
