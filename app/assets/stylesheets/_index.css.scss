@@ -1,24 +1,67 @@
 .profile {
   
-  .text {
-    text-align: center;
-    margin-top: 15%;
-    font-size: 30px;
-    font-weight: 100;
+  #page-3, #page-1, #page-2 { 
+    .content {
+      margin-top: 17%;
+      .text {
+        font-size: 30px;
+        font-weight: 100;
+        width: 300px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+      }
+      .buttons {
+        text-align: center;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        .category {
+          font-size: 30px;
+        } 
+      }
+      .side-bar {
+        li {
+          list-style-type: none;
+        }
+      }
+    }
   }
-
-  .buttons {
-    text-align: center;
-  }
-
-  #page-0 {
-    background: #EEF1EC;
+  #page-3 {
+   background: #76A3A6; 
    }
-  #page-1{ 
-    background: #76A3A6; 
+  #page-1 { 
+    background: #F5B351;
   }
   #page-2 {
     background: #A1C2AE;
   }
-
+ 
+  #page-0 {
+    background: #C76060;
+    .content {
+      margin-top: 20%;
+      .text {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 100;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .buttons {
+        text-align: center;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        .category {
+          font-size: 30px;
+        } 
+      }
+      .side-bar {
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+  }
 }

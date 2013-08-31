@@ -46,7 +46,7 @@ var PageTransitions = (function() {
     });
 
     $(".et-rotate").click(function() {
-      index = $(this).val();
+      index = $(this).attr('value');
       animate($(this));
     });
   }
