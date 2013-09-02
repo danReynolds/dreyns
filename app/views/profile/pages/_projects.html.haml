@@ -1,2 +1,20 @@
 .projects-page
-  Hey this is my projects page yo, read it up.
+  .carousel.slide#myCarousel
+    %ol.carousel-indicators
+      %li(data-target="#myCarousel" data-slide-to="0" class="active")
+      %li(data-target="#myCarousel" data-slide-to="1")
+      %li(data-target="#myCarousel" data-slide-to="2")
+    .carousel-inner
+      .active.item
+        .row-fluid
+          .span6
+            %h1 hey
+            = image_tag ('http://images.wikia.com/starwars/images/9/9a/SWG_TCG_logo.jpg')
+      .item
+        .row-fluid
+          .span12
+            %h1 hey2
+            = image_tag ('http://images.wikia.com/starwars/images/9/9a/SWG_TCG_logo.jpg')
+      .item
+    %a(class="carousel-control left" href="#myCarousel" data-slide="prev")
+    %a(class="carousel-control right" href="#myCarousel" data-slide="next")

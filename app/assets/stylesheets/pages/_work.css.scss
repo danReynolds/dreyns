@@ -1,3 +1,10 @@
 .work-page {
-  font-size: 20px;
+  font-size: 16px;
+  img {
+    max-height: 150px;
+    box-shadow: 0px 0px 3px 2px #423F3F;
+  }
+  p {
+    margin-top: 10px;
+  }
 }

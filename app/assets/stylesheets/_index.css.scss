@@ -6,8 +6,6 @@
       .text {
         font-size: 30px;
         font-weight: 100;
-        width: 300px;
-        margin-left: 40px;
         margin-bottom: 20px;
         a {
           text-decoration: none;
@@ -22,9 +20,17 @@
           font-size: 30px;
         } 
       }
+      .fun {
+        font-size: 80px;
+        margin-bottom: 20px;
+        font-family: 'Fairview';
+      }
       .side-bar {
         li {
           list-style-type: none;
+        }
+        .name {
+          margin-left: 40px;
         }
         .true {
           color: rgb(105, 102, 102);

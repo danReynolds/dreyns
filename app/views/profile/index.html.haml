@@ -4,8 +4,8 @@
       .container-fluid.content
         .row-fluid.text
           .span12 Dan Reynolds
-        %nav.cl-effect-14
-          .row-fluid.buttons
+        .row-fluid.buttons
+          %nav.cl-effect-14
             .span4
               .et-rotate{"et-in" => "#{@transitions[0].first}", "et-out" => "#{@transitions[0].last}", value: 1}
                 = link_to "Work", root_url, class: 'local'
@@ -19,12 +19,16 @@
     - @transitions.first(3).each_with_index do |page, i|
       .et-page(id="page-#{i+1}")
         .container-fluid.content
+          - if i == 2
+            .row-fluid
+              .span9.offset3.fun
+                Wall of Fun
           .row-fluid
             .span3
               .side-bar
                 %ul
                   %li.text.et-rotate{"et-in" => "#{@transitions[1].first}", "et-out" => "#{@transitions[1].last}", value: 0}
-                    =link_to 'Dan Reynolds', root_url, class: 'local'
+                    =link_to 'Dan Reynolds', root_url, class: 'local name'
                   %nav.cl-effect-1
                     %li
                       .et-rotate{"et-in" => "#{@transitions[i+1].first}", "et-out" => "#{@transitions[i+1].last}", value: 1}
