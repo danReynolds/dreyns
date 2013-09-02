@@ -1,20 +1,34 @@
 .projects-page
-  .carousel.slide#myCarousel
-    %ol.carousel-indicators
-      %li(data-target="#myCarousel" data-slide-to="0" class="active")
-      %li(data-target="#myCarousel" data-slide-to="1")
-      %li(data-target="#myCarousel" data-slide-to="2")
-    .carousel-inner
-      .active.item
-        .row-fluid
-          .span6
-            %h1 hey
-            = image_tag ('http://images.wikia.com/starwars/images/9/9a/SWG_TCG_logo.jpg')
-      .item
-        .row-fluid
-          .span12
-            %h1 hey2
-            = image_tag ('http://images.wikia.com/starwars/images/9/9a/SWG_TCG_logo.jpg')
-      .item
-    %a(class="carousel-control left" href="#myCarousel" data-slide="prev")
-    %a(class="carousel-control right" href="#myCarousel" data-slide="next")
+  .row-fluid
+    .span10
+      .carousel.slide#myCarousel
+        %ol.carousel-indicators
+          %li(data-target="#myCarousel" data-slide-to="0" class="active")
+          %li(data-target="#myCarousel" data-slide-to="1")
+          %li(data-target="#myCarousel" data-slide-to="2")
+        .carousel-inner
+          .active.item
+            .row-fluid
+              .span8.project-content
+                .row-fluid
+                  .span8
+                    Windstruments
+                    %p
+                      This is an application I used to do things and when things are done, then well they're done now aren't they. So don't you go telling me that things aren't done when everything is good.
+                    It mostly does nothing but sometimes it does something and wow when it does, sheesh.
+                  .span4.project-image
+                    = image_tag ('testSax4.png')
+          .item
+            .row-fluid
+              .span8.project-content
+                .row-fluid
+                  .span8
+                    Passbook
+                    %p
+                      This is another thing I made, it also does very little but sometimes does things, so hey that's cool.
+                    I like it and that is really all there is to it so there punk.
+                  .span4.project-image
+                    = image_tag ('1355511586_book_blue.png')
+          .item
+        %a(class="carousel-control left" href="#myCarousel" data-slide="prev")
+        %a(class="carousel-control right" href="#myCarousel" data-slide="next")

@@ -1,3 +1,24 @@
 .projects-page {
-  font-size: 20px;
+  font-size: 16px;
+  img {
+    max-height: 120px;
+  }
+  p {
+    margin-top: 10px;
+  }
+  #myCarousel {
+    height: 300px;
+    .project-content {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .project-image {
+      text-align: center;
+      margin-left: 10px;
+    }
+    .carousel-control {
+      top: 20%;
+    }
+  }
 }
