@@ -11,24 +11,39 @@
             .row-fluid
               .span8.project-content
                 .row-fluid
-                  .span8
+                  .span8.description
                     Windstruments
                     %p
-                      This is an application I used to do things and when things are done, then well they're done now aren't they. So don't you go telling me that things aren't done when everything is good.
-                    It mostly does nothing but sometimes it does something and wow when it does, sheesh.
+                      A BlackBerry 10 applcation designed to fill the void of wind instrument apps on the new platform, this QML/C++ app features bassoon, sax and flute. 
+                    It was a lot of fun to make and while it took a lot of learning on the new platform, as well as some introductory photoshop skillz, it eventually was finished and was one of the top music creation apps for a while on BlackBerry World.
                   .span4.project-image
-                    = image_tag ('testSax4.png')
+                    = link_to 'http://appworld.blackberry.com/webstore/content/20081974/' do
+                      = image_tag ('testSax4.png')
           .item
             .row-fluid
               .span8.project-content
                 .row-fluid
-                  .span8
+                  .span8.description
                     Passbook
                     %p
-                      This is another thing I made, it also does very little but sometimes does things, so hey that's cool.
-                    I like it and that is really all there is to it so there punk.
+                      A second BB10 application, this one was made in order to keep track of my grades and averages, as I quickly learnt in first year that these things were very important. 
+                    It records all the marks you could have, grouping them by subject and offers several averages.
+                      
                   .span4.project-image
-                    = image_tag ('1355511586_book_blue.png')
+                    = link_to 'http://appworld.blackberry.com/webstore/content/20081385/?countrycode=CA' do
+                      = image_tag ('1355511586_book_blue.png')
           .item
+            .row-fluid
+              .span8.project-content
+                .row-fluid
+                  .span8.description
+                    Quotel
+                    %p
+                      This is a site to compete with emergencycompliment.com, because while I like making puns and found it very interesting, I couldn't easily add my own and I found that pretty upsetting. 
+                    %p
+                      It is a quick Rails 4 app which was quickly made thanks to Bootstrap and Heroku and can be found on my github. Feel free to leave a comment or use it anytime you want.
+                  .span4.project-image
+                    = link_to 'http://quotel.co' do
+                      = image_tag 'quotel.png'
         %a(class="carousel-control left" href="#myCarousel" data-slide="prev")
         %a(class="carousel-control right" href="#myCarousel" data-slide="next")
