@@ -1,8 +1,11 @@
 .footer {
   font-size: 50px;
-  position: absolute;
-  bottom: 0;
   width: 100%;
+  $break-small: 500px;
+  @media screen and (min-height: $break-small) {
+    position: absolute;
+    bottom: 0;
+  }
   .footer-row {
     width: 400px;
 
