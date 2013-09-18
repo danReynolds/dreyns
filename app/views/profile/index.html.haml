@@ -1,6 +1,15 @@
-.profile  
+/ Modal
+#myModal.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog", tabindex: "-1"}
+  .modal-body
+    - url = "#{request.protocol}#{request.host_with_port}#{asset_path("assets/Dan_Reynolds_Resume.pdf")}"
+    %iframe{frameborder: "0", src: "http://docs.google.com/gview?url=#{url}&embedded=true", style: "width:1170px; height:800px;"}
+
+.profile
   .et-wrapper
     .et-page(id="page-0")
+      .row-fluid
+        .span12.offset9
+          = link_to "Resume","#myModal", :data => {:toggle=>"modal"}, class: 'resume'  
       .container-fluid.content
         .row-fluid.text
           .span12 Dan Reynolds
@@ -15,11 +24,12 @@
               = link_to "Fun", root_url, class: 'local'
       .row-fluid
         .span12
-          - url = "#{request.protocol}#{request.host_with_port}#{asset_path("assets/Dan_Reynolds_Resume.pdf")}"
-          %iframe{frameborder: "0", src: "http://docs.google.com/gview?url=#{url}&embedded=true", style: "width:1170px; height:800px;"}
           = render 'layouts/footer'
     - @transitions.first(3).each_with_index do |page, i|
       .et-page(id="page-#{i+1}")
+        .row-fluid
+          .span12.offset9
+            = link_to "Resume","#myModal", :data => {:toggle=>"modal"}, class: 'resume'  
         .container-fluid.content
           - if i == 2
             .row-fluid
