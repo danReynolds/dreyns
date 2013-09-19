@@ -9,7 +9,8 @@
     .et-page(id="page-0")
       .row-fluid
         .span12.offset9
-          = link_to "Resume","#myModal", :data => {:toggle=>"modal"}, class: 'resume'  
+          .toprow
+            = link_to "Resume","#myModal", :data => {:toggle=>"modal"}, class: 'resume'  
       .container-fluid.content
         .row-fluid.text
           .span12 Dan Reynolds
@@ -29,7 +30,8 @@
       .et-page(id="page-#{i+1}")
         .row-fluid
           .span12.offset9
-            = link_to "Resume","#myModal", :data => {:toggle=>"modal"}, class: 'resume'  
+            .toprow
+              = link_to "Resume","#myModal", :data => {:toggle=>"modal"}, class: 'resume'  
         .container-fluid.content
           - if i == 2
             .row-fluid
