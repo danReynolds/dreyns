@@ -1,6 +1,6 @@
 .container-fluid.footer
-  %nav.cl-effect-12
-    .row-fluid.footer-row
+  %nav
+    .row-fluid.footer-row.cl-effect-12
       .span3
         = link_to 'https://github.com/danReynolds' do
           %i.icon-github
@@ -13,4 +13,7 @@
       %span3
         = link_to 'http://www.linkedin.com/profile/view?id=225333394&trk=nav_responsive_tab_profile_pic' do
           %i.icon-linkedin
+    .row-fluid.email-row
+      .span12
+        = link_to "me@danreynolds.ca", "mailto:me@danreynolds.ca"
 

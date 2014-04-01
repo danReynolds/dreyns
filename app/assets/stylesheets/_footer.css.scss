@@ -11,12 +11,25 @@
 
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     text-align: center;
     i {
       font-size: 50px;
       color: #EEEEEE;
       text-decoration: none;
+    }
+  }
+  .email-row {
+    font-size: 16px;
+    margin-bottom: 1%;
+    text-align: center;
+
+    a {
+      text-transform: lowercase;
+    }
+
+    a:hover {
+      color: #E7E7E7;
     }
   }
 }
