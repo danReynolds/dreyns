@@ -73,11 +73,23 @@
     background: -ms-linear-gradient(left, #C630DA 0%,#540B70 100%); /* IE10+ */
     background: linear-gradient(to right, #C630DA 0%,#540B70 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C630DA', endColorstr='#540B70',GradientType=1 ); /* IE6-9 */
+    
+    .footer-row {
+      $break-small: 400px;
+      @media screen and (max-width: $break-small) {
+        width: auto;
+
+        a {
+          margin: 0;
+        }
+      }
+    }
+
     .content {
       margin-top: 20%;
-      $break-small: 400px;
-      @media screen and (max-height: $break-small) {
-        margin-top: 10%;
+      $break-small: 600px;
+      @media screen and (max-width: $break-small) {
+        margin-top: 50%;
       }
       .text {
         text-align: center;
@@ -86,6 +98,11 @@
         width: 300px;
         margin-left: auto;
         margin-right: auto;
+        $break-small: 600px;
+
+        @media screen and (max-width: $break-small) {
+          width: auto;
+        }
       }
       .buttons {
         text-align: center;
@@ -94,7 +111,22 @@
         margin-right: auto;
         .category {
           font-size: 30px;
-        } 
+        }
+        $break-small: 600px;
+        @media screen and (max-width: $break-small) {
+          width: 100%;
+          .span4 {
+            width: 100%;
+            margin-top: 10px;
+            a {
+              margin: 0;
+            }
+          }
+          width: auto;
+          a {
+            margin: 0;
+          }
+        }
       }
       .side-bar {
         li {
