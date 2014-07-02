@@ -1,4 +1,7 @@
 .profile {
+  .et-wrapper {
+    background-image: url(image_path('cliffs.jpg'));
+  }
   .toprow {
     position: relative;
   }
@@ -54,26 +57,7 @@
       }
     }
   }
-  #page-3 {
-    background: #003A35;
-  }
-  #page-1 { 
-    background: #390B7E;
-  }
-  #page-2 {
-    background: #440000;
-  }
   #page-0 {
-    background: #5787EC;
-    background: #C630DA; /* Old browsers */
-    background: -moz-linear-gradient(left, #C630DA 0%, #540B70 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#C630DA), color-stop(100%,#540B70)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, #C630DA 0%,#540B70 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, #C630DA 0%,#540B70 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, #C630DA 0%,#540B70 100%); /* IE10+ */
-    background: linear-gradient(to right, #C630DA 0%,#540B70 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C630DA', endColorstr='#540B70',GradientType=1 ); /* IE6-9 */
-    
     .footer-row {
       $break-small: 400px;
       @media screen and (max-width: $break-small) {
