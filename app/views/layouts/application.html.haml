@@ -8,5 +8,7 @@
     = csrf_meta_tags
     = yield :head
   %body
+    :plain
+      <div id="spot-im-root"></div><script>!function(t,e,o){function p(){var t=e.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==e.location.protocol?"https":"http")+":"+o,e.body.appendChild(t)}t.spotId="6b130ec13bfca2991bb209c83481ae9b",t.spotName="",t.allowDesktop=!0,t.allowMobile=!1,t.containerId="spot-im-root",p()}(window.SPOTIM={},document,"//www.spot.im/embed/scripts/launcher.js");</script>
     %main{:role => "main"}
       = yield
